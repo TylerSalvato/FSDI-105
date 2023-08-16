@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/mystyles.css">
     <title>Document</title>
 </head>
 <body>
@@ -16,6 +17,9 @@
     </header>
     <!--email,pass,fname,lname,age,gender,phone,payment,color-->
     <main>
+        <div>
+            <p id="notifications"></p>
+        </div>
         <div class="form">
             <div>
                 <label>Email:</label>
@@ -23,11 +27,11 @@
             </div>
             <div>
                 <label>Password:</label>
-                <input type="password" id="txtFirstName">
+                <input type="password" id="txtPassword">
             </div>
             <div>
                 <label>First Name:</label>
-                <input type="text" id="txtEmail">
+                <input type="text" id="txtFirstName">
             </div>
             <div>
                 <label>Last Name:</label>
@@ -62,6 +66,8 @@
     </main>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/scripts/storeManager.js"></script>
     <script src="/scripts/register.js"></script>
+
 </body>
 </html>
