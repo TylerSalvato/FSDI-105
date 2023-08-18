@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/mystyles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <title>Register</title>
+</head>
+<body>
+    <header class="container">
+        <h1>Welcome to my JQuery Registration system</h1>
+
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="register.html">Register</a>
+            <a href="users.html">Users</a>
+        </nav>
+    </header>
+    <!--email,pass,fname,lname,age,gender,phone,payment,color-->
+    <main class="container">
+        <div>
+            <p id="notifications"></p>
+        </div>
+        <div class="form">
+            <div>
+                <label>Email:</label>
+                <input class="form-control" type="text" id="txtEmail">
+            </div>
+            <div>
+                <label>Password:</label>
+                <input class="form-control" type="password" id="txtPassword">
+            </div>
+            <div>
+                <label>First Name:</label>
+                <input class="form-control" type="text" id="txtFirstName">
+            </div>
+            <div>
+                <label>Last Name:</label>
+                <input class="form-control" type="text" id="txtLastName">
+            </div>
+            <div>
+                <label>Age:</label>
+                <input class="form-control" type="number" id="txtAge">
+            </div>
+            <div>
+                <label>Gender:</label>
+                <input class="form-control" type="text" id="txtGender">
+            </div>
+            <div>
+                <label>Phone:</label>
+                <input class="form-control" type="tel" id="txtPhone">
+            </div>
+            <div>
+                <label>Payment:</label>
+                <select class="form-select" id="selPayment">
+                    <option value="cash">Cash</option>
+                    <option value="credit">Credit Card</option>
+                    <option value="paypal">Paypal</option>
+                </select>
+            </div>
+            <div>
+                <label>Color:</label>
+                <input class="form-control form-control-color" type="color" id="selColor">
+            </div>
+            <button class="btn btn-primary" id="btnAdd">Add</button>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/scripts/storeManager.js"></script>
+    <script src="/scripts/register.js"></script>
+
+</body>
+</html>

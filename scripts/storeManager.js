@@ -13,6 +13,6 @@ function readUsers(){
         return [];
     }else{
         //it means that we have users into the LS
-        return JSON.parse(users);//parse back JSON into obj
+        return JSON.parse(users);//parse back JSON into array
     }
 }
